@@ -1,0 +1,119 @@
+.app {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.search {
+  padding: 0.5rem;
+  font-size: 1rem;
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-books li,
+.list-read li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.list-books img {
+  width: 79px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.details {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.btn-back,
+.btn-add,
+.btn-delete {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.btn-back {
+  background: rgb(214, 18, 18);
+  border-radius: 90%;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.summary {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* Search icon styling */
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-icon {
+  position: absolute;
+  left: 12.8rem;
+  pointer-events: none;
+}
+.details {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 4px;
+  transition: width 0.3s;
+}
+
+.large-details {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
+.loader {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.error {
+  color: red;
+}
